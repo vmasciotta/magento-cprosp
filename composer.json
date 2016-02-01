@@ -12,6 +12,6 @@
     ],
     "require":{
         "magento-hackathon/magento-composer-installer":"*",
-        "magento-core" : "1.9.*"
+        "magento/core" : "1.9.*"
     }
 }
