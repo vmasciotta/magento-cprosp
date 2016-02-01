@@ -1,6 +1,6 @@
 # Magento CPROSP
 
-*CROSP* è l'acronimo di **C**atalog **P**rice **R**ules **O**ver **S**pecial **P**rice.
+*CPROSP* è l'acronimo di **C**atalog **P**rice **R**ules **O**ver **S**pecial **P**rice.
 
 Questo modulo modifica il comportamento del CatalogPriceRules quando interagisce con un prodotto che ha uno Special Price assegnato.
 
@@ -30,7 +30,7 @@ Il prezzo finale sarà di € 4.60 e non di € 5.00 in quanto l'80% viene sottr
 
 *Nota*
 
-La soluzione del problema è stata fornita da diversi utenti su [stackoverflow](http://stackoverflow.com/questions/18120342/catalog-price-rules-applied-to-special-price), 
+La soluzione del problema è stata fornita da diversi utenti su [StackOverflow](http://stackoverflow.com/questions/18120342/catalog-price-rules-applied-to-special-price), 
 non ho fatto altro che pacchettizzare e trasformare in modulo il codice da loro fornito in modo da facilitarne l'installazione. 
 
 Thx StackOverflow!
