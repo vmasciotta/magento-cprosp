@@ -7,11 +7,11 @@
     </modules>
     <global>
         <models>
-            <catalogrule_resource>
+            <catalogrule>
                 <rewrite>
-                    <rule>Vmasciotta_Cprosp_Model_Catalogrule_Resource_Rule</rule>
+                    <action_index_refresh>Vmasciotta_Cprosp_Model_CatalogRule_Action_Index_Refresh</action_index_refresh>
                 </rewrite>
-            </catalogrule_resource>
+            </catalogrule>
         </models>
     </global>
 </config>

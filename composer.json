@@ -3,7 +3,7 @@
     "type":"magento-module",
     "license":"OSL-3.0",
     "homepage":"http://www.valeriomasciotta.it",
-    "description":"Modifica il comportamento della Catalog Price Rules quando interagiscono con gli Special Price. Per Magento da 1.5.x a 1.8.x .",
+    "description":"Modifica il comportamento della Catalog Price Rules quando interagiscono con gli Special Price. Per Magento 1.9.x .",
     "authors":[
         {
             "name":"Valerio Masciotta",
@@ -12,6 +12,6 @@
     ],
     "require":{
         "magento-hackathon/magento-composer-installer":"*",
-        "magento-core" : "1.5.* || 1.6.* || 1.7.* || 1.8.*"
+        "magento-core" : "1.9.*"
     }
 }
