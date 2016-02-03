@@ -1,48 +1,46 @@
 # Magento CPROSP
 
-*CPROSP* è l'acronimo di **C**atalog **P**rice **R**ules **O**ver **S**pecial **P**rice.
+*CPROSP* stands for **C**atalog **P**rice **R**ules **O**ver **S**pecial **P**rice.
 
-Questo modulo modifica il comportamento del CatalogPriceRules quando interagisce con un prodotto che ha uno Special Price assegnato.
+This module changes the default Catalog Price Rule behaviour when it interacts with a product having a special price.
 
-Da usare con **Magento fino alla versione 1.8.x**
+Compatible with **Magento up to 1.8**
 
-**Il problema:**
+**The problem:**
 
-Le regole di sconto assegnate tramite CatalogPriceRules non vengono applicate se il prezzo assegnato tramite special price è inferiore al prezzo elaborato scontato.
+Catalog Price Rules are not applied if the product's special price is less than the  discounted price calculated by the rules.
 
-**Soluzione**
+**Solution:**
 
-E' necessario purtroppo fare una modifica al core di Magento e a tale scopo ho creato questo modulo.
+Sadly we have to change the Magento core code, that's why I wrote this module.
 
+**ATTENTION**
 
-**ATTENZIONE**
+Having a product with a special price assigned on it, the discount will be calculated on the special price and not on the regular base price.
 
-Dato un prodotto avente uno *Special Price* definito, lo sconto applicato dalla regola del CatalogPriceRule verrà calcolato sulla base dello *Special Price* e non del prezzo regolare.
+*For example*
 
-Ad esempio
+A product having:
 
-Un prodotto avente:
-* **prezzo base** € 25.00;
-* **prezzo speciale** €23.00;
-* **regola prezzo catalogo** che impone uno sconto dell'80% a tutti i prodotti del catalogo
+* **regular price** € 25.00
+* **special price** € 23.00
+* **catalog price rule** sets 80% discount on all catalog products
 
-Il prezzo finale sarà di € 4.60 e non di € 5.00 in quanto l'80% viene sottratto dallo special price piuttosto che dal prezzo base.
+The final price will be € 4.60 and not € 5.00 because the 80% will be deduct from the special price and not from the regular price.
 
-*Nota*
+*Notes*
 
-La soluzione del problema è stata fornita da diversi utenti su [StackOverflow](http://stackoverflow.com/questions/18120342/catalog-price-rules-applied-to-special-price), 
-non ho fatto altro che pacchettizzare e trasformare in modulo il codice da loro fornito in modo da facilitarne l'installazione. 
+I just wrote a module based on the solution available on [StackOverflow](http://stackoverflow.com/questions/18120342/catalog-price-rules-applied-to-special-price).
 
 Thx StackOverflow!
 
+##Installation
 
-##Installazione
+Download the zip package and unzip it in your magento root installation directory.
 
-Scaricare il repository ZIP e scompattarlo nella propria root di Magento
+*or*
 
-*oppure*
-
-questo modulo è installabile attraverso *composer* aggiungendo le seguenti righe al proprio composer.json
+You can install it through composer adding the following rules to your composer.json file:
 
 ```js
 {
