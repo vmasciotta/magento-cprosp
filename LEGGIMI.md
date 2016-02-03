@@ -19,3 +19,26 @@ La soluzione del problema è stata fornita da diversi utenti su [stackoverflow](
 non ho fatto altro che pacchettizzare e trasformare in modulo il codice da loro fornito in modo da facilitarne l'installazione.
 
 Thx StackOverflow!
+
+##Installazione
+
+Scaricare il repository ZIP e scompattarlo nella propria root di Magento
+
+*oppure*
+
+questo modulo è installabile attraverso *composer* aggiungendo le seguenti righe al proprio composer.json
+
+```js
+{
+    "require":[
+        ...
+        "vmasciotta/magento-cprosp":"1.9"
+        ...
+    ],
+    "repositories":[
+        ...
+        {"type": "vcs", "url":"https://github.com/vmasciotta/magento-cprosp.git"}
+        ...
+    ]
+}
+```
