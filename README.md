@@ -46,7 +46,7 @@ You can install it through composer adding the following rules to your composer.
 {
     "require":[
         ...
-        "vmasciotta/magento-cprosp":"1.8"
+        "vmasciotta/magento-cprosp":"1.9"
         ...
     ],
     "repositories":[
